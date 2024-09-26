@@ -20,10 +20,10 @@ public class FreshMerchandise extends Merchandise {
     }
     @Override
     public Object getSpecificData() {
-        StringBuilder builder = new StringBuilder();
-        builder.append("Localización: ").append(getLocation()).append("\n");
-        builder.append("Caducidad: ").append(getFormattedDate(expirationDate));
-        return builder.toString();
+        StringBuilder sb = new StringBuilder();
+        sb.append("Localización: ").append(getLocation()).append("\n");
+        sb.append("Caducidad: ").append(getFormattedDate(expirationDate));
+        return sb.toString();
     }
     public void printSpecificData() {
         System.out.println(getSpecificData());
